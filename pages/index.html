@@ -11,7 +11,11 @@
     <script src="js/templates/templates.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        Coveo.SearchEndpoint.configureSampleEndpointV2();
+        Coveo.SearchEndpoint.configureCloudV2Endpoint(
+          "gopokemonkaranzeqyzqdw",
+          "xx496529c6-7a24-4767-b886-363f4becbfa8",
+          "https://platformqa.cloud.coveo.com/rest/search"
+        );
         Coveo.init(document.body);
       })
     </script>
